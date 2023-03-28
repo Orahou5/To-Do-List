@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>To Do List</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1 style = "text-align: center">To Do List</h1>
+
+    <div class="wrapper">
+        <label for="Name">Enter your next item:</label>
+        <input id="listUnit" type="text" size="40" maxlength="60" value="" placeholder="Enter some text" onkeypress="clickPress(event)">
+        <input type="button" value="Add to the list" onClick="addToList()">
+    </div>
+    
+
+    <div>
+        <ul id="toDoList">
+        </ul>
+    </div>
+</body>
+</html>
